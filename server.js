@@ -1,3 +1,5 @@
+require("dotenv").config();
+
 const Next = require("next");
 const express = require("express");
 const compression = require("compression");
@@ -5,6 +7,7 @@ const bodyParser = require("body-parser");
 // const session = require("js-base-lib");
 const routes = require("./routes");
 const cors = require("cors");
+const PORT = process.env.PORT;
 
 const next = Next({ dev: process.env.NODE_ENV !== "production" });
 
@@ -18,9 +21,9 @@ const next = Next({ dev: process.env.NODE_ENV !== "production" });
   // app.use(session);
   app.use(routes.getRequestHandler(next));
 
-  app.listen(3000, () => {
+  app.listen(PORT, () => {
     const { name, version } = require("./package.json");
-    console.log(`${name} v${version} listening on port 3000`);
+    console.log(`${name} v${version} listening on port ${PORT}`);
   });
 })();
 
