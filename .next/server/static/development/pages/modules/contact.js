@@ -88,7 +88,7 @@ module.exports =
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 3);
+/******/ 	return __webpack_require__(__webpack_require__.s = 7);
 /******/ })
 /************************************************************************/
 /******/ ({
@@ -1907,10 +1907,10 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
-/***/ "./pages/modules/home/index.js":
-/*!*************************************!*\
-  !*** ./pages/modules/home/index.js ***!
-  \*************************************/
+/***/ "./pages/modules/contact/index.js":
+/*!****************************************!*\
+  !*** ./pages/modules/contact/index.js ***!
+  \****************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -1925,18 +1925,12 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/defineProperty */ "./node_modules/@babel/runtime-corejs2/helpers/esm/defineProperty.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! react */ "react");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_7__);
-/* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! next/link */ "./node_modules/next/link.js");
-/* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_8___default = /*#__PURE__*/__webpack_require__.n(next_link__WEBPACK_IMPORTED_MODULE_8__);
-/* harmony import */ var _components_navbar__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ../../components/navbar */ "./pages/components/navbar/index.js");
-/* harmony import */ var _components_body__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ../../components/body */ "./pages/components/body/index.js");
-/* harmony import */ var _components_socialLinks__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ../../components/socialLinks */ "./pages/components/socialLinks/index.js");
-/* harmony import */ var _material_ui_core_Grid__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! @material-ui/core/Grid */ "@material-ui/core/Grid");
-/* harmony import */ var _material_ui_core_Grid__WEBPACK_IMPORTED_MODULE_12___default = /*#__PURE__*/__webpack_require__.n(_material_ui_core_Grid__WEBPACK_IMPORTED_MODULE_12__);
-/* harmony import */ var _material_ui_core_Typography__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! @material-ui/core/Typography */ "@material-ui/core/Typography");
-/* harmony import */ var _material_ui_core_Typography__WEBPACK_IMPORTED_MODULE_13___default = /*#__PURE__*/__webpack_require__.n(_material_ui_core_Typography__WEBPACK_IMPORTED_MODULE_13__);
-/* harmony import */ var _material_ui_core_Button__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! @material-ui/core/Button */ "@material-ui/core/Button");
-/* harmony import */ var _material_ui_core_Button__WEBPACK_IMPORTED_MODULE_14___default = /*#__PURE__*/__webpack_require__.n(_material_ui_core_Button__WEBPACK_IMPORTED_MODULE_14__);
-/* harmony import */ var _styles__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! ./styles */ "./pages/modules/home/styles.js");
+/* harmony import */ var _components_navbar__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../../components/navbar */ "./pages/components/navbar/index.js");
+/* harmony import */ var _components_body__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ../../components/body */ "./pages/components/body/index.js");
+/* harmony import */ var _components_socialLinks__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ../../components/socialLinks */ "./pages/components/socialLinks/index.js");
+/* harmony import */ var _material_ui_core__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! @material-ui/core */ "@material-ui/core");
+/* harmony import */ var _material_ui_core__WEBPACK_IMPORTED_MODULE_11___default = /*#__PURE__*/__webpack_require__.n(_material_ui_core__WEBPACK_IMPORTED_MODULE_11__);
+/* harmony import */ var _styles__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ./styles */ "./pages/modules/contact/styles.js");
 
 
 
@@ -1951,81 +1945,137 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-
-
-
-var Home =
+var Contact =
 /*#__PURE__*/
 function (_React$Component) {
-  Object(_babel_runtime_corejs2_helpers_esm_inherits__WEBPACK_IMPORTED_MODULE_5__["default"])(Home, _React$Component);
+  Object(_babel_runtime_corejs2_helpers_esm_inherits__WEBPACK_IMPORTED_MODULE_5__["default"])(Contact, _React$Component);
 
-  function Home() {
+  function Contact() {
     var _getPrototypeOf2;
 
     var _this;
 
-    Object(_babel_runtime_corejs2_helpers_esm_classCallCheck__WEBPACK_IMPORTED_MODULE_0__["default"])(this, Home);
+    Object(_babel_runtime_corejs2_helpers_esm_classCallCheck__WEBPACK_IMPORTED_MODULE_0__["default"])(this, Contact);
 
     for (var _len = arguments.length, args = new Array(_len), _key = 0; _key < _len; _key++) {
       args[_key] = arguments[_key];
     }
 
-    _this = Object(_babel_runtime_corejs2_helpers_esm_possibleConstructorReturn__WEBPACK_IMPORTED_MODULE_2__["default"])(this, (_getPrototypeOf2 = Object(_babel_runtime_corejs2_helpers_esm_getPrototypeOf__WEBPACK_IMPORTED_MODULE_3__["default"])(Home)).call.apply(_getPrototypeOf2, [this].concat(args)));
+    _this = Object(_babel_runtime_corejs2_helpers_esm_possibleConstructorReturn__WEBPACK_IMPORTED_MODULE_2__["default"])(this, (_getPrototypeOf2 = Object(_babel_runtime_corejs2_helpers_esm_getPrototypeOf__WEBPACK_IMPORTED_MODULE_3__["default"])(Contact)).call.apply(_getPrototypeOf2, [this].concat(args)));
 
     Object(_babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_6__["default"])(Object(_babel_runtime_corejs2_helpers_esm_assertThisInitialized__WEBPACK_IMPORTED_MODULE_4__["default"])(_this), "renderSocialLinks", function () {
       var classes = _this.props.classes;
       return react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("div", {
         className: classes.socialLinkContainer
-      }, react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(_components_socialLinks__WEBPACK_IMPORTED_MODULE_11__["default"], null));
+      }, react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(_components_socialLinks__WEBPACK_IMPORTED_MODULE_10__["default"], null));
     });
 
     return _this;
   }
 
-  Object(_babel_runtime_corejs2_helpers_esm_createClass__WEBPACK_IMPORTED_MODULE_1__["default"])(Home, [{
+  Object(_babel_runtime_corejs2_helpers_esm_createClass__WEBPACK_IMPORTED_MODULE_1__["default"])(Contact, [{
     key: "render",
     value: function render() {
       var classes = this.props.classes;
-      return react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(_material_ui_core_Grid__WEBPACK_IMPORTED_MODULE_12___default.a, {
-        container: true
-      }, react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(_components_navbar__WEBPACK_IMPORTED_MODULE_9__["default"], null), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(_components_body__WEBPACK_IMPORTED_MODULE_10__["default"], null, this.renderSocialLinks(), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("div", {
-        className: classes.container
+      return react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("div", null, react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(_components_navbar__WEBPACK_IMPORTED_MODULE_8__["default"], null), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(_components_body__WEBPACK_IMPORTED_MODULE_9__["default"], null, this.renderSocialLinks(), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_11__["Grid"], {
+        container: true,
+        direction: "column",
+        justify: "center",
+        alignContent: "center"
       }, react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("div", {
-        className: classes.introContainer
-      }, react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("div", null, react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(_material_ui_core_Typography__WEBPACK_IMPORTED_MODULE_13___default.a, {
-        className: classes.intro
-      }, "Hi, my name is")), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("div", null, react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(_material_ui_core_Typography__WEBPACK_IMPORTED_MODULE_13___default.a, {
-        className: classes.name
-      }, "Drew Blincoe")), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("div", null, react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(_material_ui_core_Typography__WEBPACK_IMPORTED_MODULE_13___default.a, {
-        className: classes.title
-      }, "I build things with my computer")), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("div", null, react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(_material_ui_core_Typography__WEBPACK_IMPORTED_MODULE_13___default.a, {
-        className: classes.description
-      }, "I am a software developer, based in Evansville, IN. I specialize in building exceptional web applications with effecient code. Currently working at", " ", react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("a", {
-        href: "https://torchlite.com/",
-        target: "_blank",
-        className: classes.link
-      }, "Torchlite"), " ", "as a contracted fullstack developer. Looking for that next opportunity!")), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(next_link__WEBPACK_IMPORTED_MODULE_8___default.a, {
-        href: "/contact"
-      }, react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(_material_ui_core_Button__WEBPACK_IMPORTED_MODULE_14___default.a, {
+        className: classes.container
+      }, react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_11__["Grid"], {
+        container: true
+      }, react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_11__["Grid"], {
+        item: true,
+        xs: 6,
+        className: classes.paraContainer
+      }, react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_11__["Typography"], {
+        variant: "h5",
+        inline: true,
+        className: classes.number
+      }, "04."), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_11__["Typography"], {
+        variant: "h4",
+        inline: true,
+        className: classes.pageTitle
+      }, "Contact Me"))), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("form", {
+        action: "https://formspree.io/drewblincoe7@gmail.com",
+        method: "POST",
+        className: classes.form
+      }, react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_11__["Grid"], {
+        container: true,
+        className: classes.rootInputContainer
+      }, react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_11__["Grid"], {
+        item: true,
+        xs: 6,
+        className: classes.nameInputContainer
+      }, react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_11__["TextField"], {
+        required: true,
+        type: "text",
+        name: "name",
+        placeholder: "Name",
+        className: classes.input,
+        InputProps: {
+          disableUnderline: true,
+          classes: {
+            root: classes.test
+          }
+        },
+        color: "primary"
+      })), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_11__["Grid"], {
+        item: true,
+        xs: 6,
+        className: classes.emailInputContainer
+      }, react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_11__["TextField"], {
+        required: true,
+        type: "email",
+        name: "_replyto",
+        placeholder: "Email",
+        className: classes.input,
+        InputProps: {
+          disableUnderline: true,
+          classes: {
+            root: classes.test
+          }
+        },
+        color: "primary"
+      }))), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_11__["TextField"], {
+        required: true,
+        multiline: true,
+        rows: 5,
+        name: "message",
+        placeholder: "Enter message here...",
+        color: "primary",
+        className: classes.rootInputContainer,
+        InputProps: {
+          disableUnderline: true,
+          classes: {
+            root: classes.test
+          }
+        }
+      }), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_11__["Button"], {
         color: "primary",
         variant: "outlined",
-        size: "large",
-        className: classes.button
-      }, "Let's Talk"))))));
+        type: "submit",
+        value: "Send",
+        classes: {
+          root: classes.button
+        }
+      }, "Send"))))));
     }
   }]);
 
-  return Home;
+  return Contact;
 }(react__WEBPACK_IMPORTED_MODULE_7___default.a.Component);
 
-/* harmony default export */ __webpack_exports__["default"] = (Object(_styles__WEBPACK_IMPORTED_MODULE_15__["default"])(Home));
+/* harmony default export */ __webpack_exports__["default"] = (Object(_styles__WEBPACK_IMPORTED_MODULE_12__["default"])(Contact));
 
 /***/ }),
 
-/***/ "./pages/modules/home/styles.js":
-/*!**************************************!*\
-  !*** ./pages/modules/home/styles.js ***!
-  \**************************************/
+/***/ "./pages/modules/contact/styles.js":
+/*!*****************************************!*\
+  !*** ./pages/modules/contact/styles.js ***!
+  \*****************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -2038,66 +2088,65 @@ __webpack_require__.r(__webpack_exports__);
   var colors = theme.palette.colors;
   return {
     container: {
-      display: "flex",
-      flexDirection: "column",
-      height: "100%",
-      width: "100%",
-      justifyContent: "center",
-      alignItems: "center"
-    },
-    introContainer: {
-      display: "flex",
-      flexDirection: "column",
-      justifyContent: "flex-start"
-    },
-    intro: {
-      color: colors.secondary,
-      fontFamily: "Roboto",
-      fontSize: "20px",
-      lineHeight: "1.25"
-    },
-    name: {
-      color: colors.white,
-      fontSize: "80px",
-      lineHeight: "1.25"
-    },
-    title: {
-      color: colors.main50,
-      fontSize: "60px",
-      lineHeight: "1.25"
-    },
-    description: {
-      width: "500px",
-      marginTop: 20,
-      color: colors.main50,
-      fontSize: "18px"
-    },
-    link: {
-      color: colors.secondary,
-      textDecoration: "none"
-    },
-    button: {
-      marginTop: "50px",
-      width: "150px"
+      width: "60%",
+      height: "60%"
     },
     socialLinkContainer: {
       position: "absolute",
       bottom: 0,
       left: 40
+    },
+    number: {
+      color: colors.secondary
+    },
+    pageTitle: {
+      color: colors.white,
+      marginLeft: 10
+    },
+    form: {
+      display: "flex",
+      justifyContent: "center",
+      flexDirection: "column",
+      margin: "30px auto 0 auto"
+    },
+    rootInputContainer: {
+      marginTop: 20
+    },
+    nameInputContainer: {
+      display: "flex",
+      justifyContent: "flex-start"
+    },
+    emailInputContainer: {
+      display: "flex",
+      justifyContent: "flex-end"
+    },
+    input: {
+      width: "90%"
+    },
+    test: {
+      border: "thin solid ".concat(colors.secondary),
+      borderRadius: "7px",
+      color: colors.secondary,
+      padding: 10
+    },
+    button: {
+      border: "thin solid ".concat(colors.secondary),
+      borderRadius: "7px",
+      marginTop: 20
     }
   };
 }));
 
 /***/ }),
 
-/***/ 3:
-/*!*******************************************!*\
-  !*** multi ./pages/modules/home/index.js ***!
-  \*******************************************/
+/***/ 7:
+/*!**********************************************!*\
+  !*** multi ./pages/modules/contact/index.js ***!
+  \**********************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! /Users/Drew/Documents/Coding/portfolio/pages/modules/home/index.js */"./pages/modules/home/index.js");
+module.exports = __webpack_require__(/*! /Users/Drew/Documents/Coding/portfolio/pages/modules/contact/index.js */"./pages/modules/contact/index.js");
 
 
 /***/ }),
@@ -2143,17 +2192,6 @@ module.exports = require("@material-ui/core/Grid");
 /***/ (function(module, exports) {
 
 module.exports = require("@material-ui/core/SvgIcon");
-
-/***/ }),
-
-/***/ "@material-ui/core/Typography":
-/*!***********************************************!*\
-  !*** external "@material-ui/core/Typography" ***!
-  \***********************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-module.exports = require("@material-ui/core/Typography");
 
 /***/ }),
 
@@ -2345,4 +2383,4 @@ module.exports = require("url");
 /***/ })
 
 /******/ });
-//# sourceMappingURL=home.js.map
+//# sourceMappingURL=contact.js.map

@@ -1,4 +1,4 @@
-((window["webpackJsonp"] = window["webpackJsonp"] || []).push([["static/development/pages/modules/home.js"],{
+((window["webpackJsonp"] = window["webpackJsonp"] || []).push([["static/development/pages/modules/about.js"],{
 
 /***/ "./node_modules/@babel/runtime-corejs2/core-js/array/is-array.js":
 /*!***********************************************************************!*\
@@ -47667,21 +47667,21 @@ exports.formatWithValidation = formatWithValidation;
 
 /***/ }),
 
-/***/ "./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2Fmodules%2Fhome&absolutePagePath=%2FUsers%2FDrew%2FDocuments%2FCoding%2Fportfolio%2Fpages%2Fmodules%2Fhome%2Findex.js!./":
-/*!***************************************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2Fmodules%2Fhome&absolutePagePath=%2FUsers%2FDrew%2FDocuments%2FCoding%2Fportfolio%2Fpages%2Fmodules%2Fhome%2Findex.js ***!
-  \***************************************************************************************************************************************************************************************************************/
+/***/ "./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2Fmodules%2Fabout&absolutePagePath=%2FUsers%2FDrew%2FDocuments%2FCoding%2Fportfolio%2Fpages%2Fmodules%2Fabout%2Findex.js!./":
+/*!*****************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2Fmodules%2Fabout&absolutePagePath=%2FUsers%2FDrew%2FDocuments%2FCoding%2Fportfolio%2Fpages%2Fmodules%2Fabout%2Findex.js ***!
+  \*****************************************************************************************************************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
 
-    (window.__NEXT_P=window.__NEXT_P||[]).push(["/modules/home", function() {
-      var page = __webpack_require__(/*! ./pages/modules/home/index.js */ "./pages/modules/home/index.js")
+    (window.__NEXT_P=window.__NEXT_P||[]).push(["/modules/about", function() {
+      var page = __webpack_require__(/*! ./pages/modules/about/index.js */ "./pages/modules/about/index.js")
       if(true) {
-        module.hot.accept(/*! ./pages/modules/home/index.js */ "./pages/modules/home/index.js", function() {
-          if(!next.router.components["/modules/home"]) return
-          var updatedPage = __webpack_require__(/*! ./pages/modules/home/index.js */ "./pages/modules/home/index.js")
-          next.router.update("/modules/home", updatedPage.default || updatedPage)
+        module.hot.accept(/*! ./pages/modules/about/index.js */ "./pages/modules/about/index.js", function() {
+          if(!next.router.components["/modules/about"]) return
+          var updatedPage = __webpack_require__(/*! ./pages/modules/about/index.js */ "./pages/modules/about/index.js")
+          next.router.update("/modules/about", updatedPage.default || updatedPage)
         })
       }
       return { page: page.default || page }
@@ -57311,10 +57311,10 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
-/***/ "./pages/modules/home/index.js":
-/*!*************************************!*\
-  !*** ./pages/modules/home/index.js ***!
-  \*************************************/
+/***/ "./pages/modules/about/index.js":
+/*!**************************************!*\
+  !*** ./pages/modules/about/index.js ***!
+  \**************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -57329,18 +57329,11 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/defineProperty */ "./node_modules/@babel/runtime-corejs2/helpers/esm/defineProperty.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_7__);
-/* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! next/link */ "./node_modules/next/link.js");
-/* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_8___default = /*#__PURE__*/__webpack_require__.n(next_link__WEBPACK_IMPORTED_MODULE_8__);
-/* harmony import */ var _components_navbar__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ../../components/navbar */ "./pages/components/navbar/index.js");
+/* harmony import */ var _components_navbar__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../../components/navbar */ "./pages/components/navbar/index.js");
+/* harmony import */ var _components_socialLinks__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ../../components/socialLinks */ "./pages/components/socialLinks/index.js");
 /* harmony import */ var _components_body__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ../../components/body */ "./pages/components/body/index.js");
-/* harmony import */ var _components_socialLinks__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ../../components/socialLinks */ "./pages/components/socialLinks/index.js");
-/* harmony import */ var _material_ui_core_Grid__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! @material-ui/core/Grid */ "./node_modules/@material-ui/core/Grid/index.js");
-/* harmony import */ var _material_ui_core_Grid__WEBPACK_IMPORTED_MODULE_12___default = /*#__PURE__*/__webpack_require__.n(_material_ui_core_Grid__WEBPACK_IMPORTED_MODULE_12__);
-/* harmony import */ var _material_ui_core_Typography__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! @material-ui/core/Typography */ "./node_modules/@material-ui/core/Typography/index.js");
-/* harmony import */ var _material_ui_core_Typography__WEBPACK_IMPORTED_MODULE_13___default = /*#__PURE__*/__webpack_require__.n(_material_ui_core_Typography__WEBPACK_IMPORTED_MODULE_13__);
-/* harmony import */ var _material_ui_core_Button__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! @material-ui/core/Button */ "./node_modules/@material-ui/core/Button/index.js");
-/* harmony import */ var _material_ui_core_Button__WEBPACK_IMPORTED_MODULE_14___default = /*#__PURE__*/__webpack_require__.n(_material_ui_core_Button__WEBPACK_IMPORTED_MODULE_14__);
-/* harmony import */ var _styles__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! ./styles */ "./pages/modules/home/styles.js");
+/* harmony import */ var _material_ui_core__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! @material-ui/core */ "./node_modules/@material-ui/core/index.es.js");
+/* harmony import */ var _styles__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ./styles */ "./pages/modules/about/styles.js");
 
 
 
@@ -57355,81 +57348,107 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-
-
-
-var Home =
+var About =
 /*#__PURE__*/
 function (_React$Component) {
-  Object(_babel_runtime_corejs2_helpers_esm_inherits__WEBPACK_IMPORTED_MODULE_5__["default"])(Home, _React$Component);
+  Object(_babel_runtime_corejs2_helpers_esm_inherits__WEBPACK_IMPORTED_MODULE_5__["default"])(About, _React$Component);
 
-  function Home() {
+  function About() {
     var _getPrototypeOf2;
 
     var _this;
 
-    Object(_babel_runtime_corejs2_helpers_esm_classCallCheck__WEBPACK_IMPORTED_MODULE_0__["default"])(this, Home);
+    Object(_babel_runtime_corejs2_helpers_esm_classCallCheck__WEBPACK_IMPORTED_MODULE_0__["default"])(this, About);
 
     for (var _len = arguments.length, args = new Array(_len), _key = 0; _key < _len; _key++) {
       args[_key] = arguments[_key];
     }
 
-    _this = Object(_babel_runtime_corejs2_helpers_esm_possibleConstructorReturn__WEBPACK_IMPORTED_MODULE_2__["default"])(this, (_getPrototypeOf2 = Object(_babel_runtime_corejs2_helpers_esm_getPrototypeOf__WEBPACK_IMPORTED_MODULE_3__["default"])(Home)).call.apply(_getPrototypeOf2, [this].concat(args)));
+    _this = Object(_babel_runtime_corejs2_helpers_esm_possibleConstructorReturn__WEBPACK_IMPORTED_MODULE_2__["default"])(this, (_getPrototypeOf2 = Object(_babel_runtime_corejs2_helpers_esm_getPrototypeOf__WEBPACK_IMPORTED_MODULE_3__["default"])(About)).call.apply(_getPrototypeOf2, [this].concat(args)));
 
     Object(_babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_6__["default"])(Object(_babel_runtime_corejs2_helpers_esm_assertThisInitialized__WEBPACK_IMPORTED_MODULE_4__["default"])(_this), "renderSocialLinks", function () {
       var classes = _this.props.classes;
       return react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("div", {
         className: classes.socialLinkContainer
-      }, react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(_components_socialLinks__WEBPACK_IMPORTED_MODULE_11__["default"], null));
+      }, react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(_components_socialLinks__WEBPACK_IMPORTED_MODULE_9__["default"], null));
     });
 
     return _this;
   }
 
-  Object(_babel_runtime_corejs2_helpers_esm_createClass__WEBPACK_IMPORTED_MODULE_1__["default"])(Home, [{
+  Object(_babel_runtime_corejs2_helpers_esm_createClass__WEBPACK_IMPORTED_MODULE_1__["default"])(About, [{
     key: "render",
     value: function render() {
       var classes = this.props.classes;
-      return react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(_material_ui_core_Grid__WEBPACK_IMPORTED_MODULE_12___default.a, {
-        container: true
-      }, react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(_components_navbar__WEBPACK_IMPORTED_MODULE_9__["default"], null), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(_components_body__WEBPACK_IMPORTED_MODULE_10__["default"], null, this.renderSocialLinks(), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("div", {
-        className: classes.container
+      return react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("div", null, react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(_components_navbar__WEBPACK_IMPORTED_MODULE_8__["default"], null), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(_components_body__WEBPACK_IMPORTED_MODULE_10__["default"], null, this.renderSocialLinks(), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_11__["Grid"], {
+        container: true,
+        direction: "column",
+        justify: "center",
+        alignContent: "center"
       }, react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("div", {
-        className: classes.introContainer
-      }, react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("div", null, react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(_material_ui_core_Typography__WEBPACK_IMPORTED_MODULE_13___default.a, {
-        className: classes.intro
-      }, "Hi, my name is")), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("div", null, react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(_material_ui_core_Typography__WEBPACK_IMPORTED_MODULE_13___default.a, {
-        className: classes.name
-      }, "Drew Blincoe")), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("div", null, react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(_material_ui_core_Typography__WEBPACK_IMPORTED_MODULE_13___default.a, {
-        className: classes.title
-      }, "I build things with my computer")), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("div", null, react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(_material_ui_core_Typography__WEBPACK_IMPORTED_MODULE_13___default.a, {
-        className: classes.description
-      }, "I am a software developer, based in Evansville, IN. I specialize in building exceptional web applications with effecient code. Currently working at", " ", react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("a", {
-        href: "https://torchlite.com/",
-        target: "_blank",
-        className: classes.link
-      }, "Torchlite"), " ", "as a contracted fullstack developer. Looking for that next opportunity!")), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(next_link__WEBPACK_IMPORTED_MODULE_8___default.a, {
-        href: "/contact"
-      }, react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(_material_ui_core_Button__WEBPACK_IMPORTED_MODULE_14___default.a, {
-        color: "primary",
-        variant: "outlined",
-        size: "large",
-        className: classes.button
-      }, "Let's Talk"))))));
+        className: classes.container
+      }, react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_11__["Grid"], {
+        container: true
+      }, react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_11__["Grid"], {
+        item: true,
+        xs: 6,
+        className: classes.paraContainer
+      }, react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_11__["Typography"], {
+        variant: "h5",
+        inline: true,
+        className: classes.number
+      }, "01."), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_11__["Typography"], {
+        variant: "h4",
+        inline: true,
+        className: classes.pageTitle
+      }, "About Me"), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_11__["Typography"], {
+        className: classes.para
+      }, "My name is Drew Blincoe and I am a Software Developer out of Evansville, IN. I am very passionate about learning and challenging myself which is why I am a Marine Veteran and a Developer. I love to push myself to become better at everything I do, and while I do not think I will ever be, I certainly drive to be the best.", react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("br", null), "I love sports, mainly football (Let's go Baltimore Ravens), as well as hockey (Let's go Blues). I love working out and when summer rolls around I enjoy camping, kayaking, and backpaking. But my favorite hobby is playing video games, I have played ever since I could hold a controller.", react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("br", null), "While all these hobbies are great to have, my number one priority is to my family. I am currently engaged and we have three dogs and one cat: Kylo (a German Shepard), Rey (a Golden Retriever), Chance (a Beagle), and Loki (our cat).", react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("br", null), "Here is a list of my qualifying skills:"), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_11__["Grid"], {
+        container: true
+      }, react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_11__["Grid"], {
+        item: true,
+        xs: 6
+      }, react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("ul", {
+        className: classes.list
+      }, react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("li", {
+        className: classes.listItem
+      }, "JavaScript"), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("li", {
+        className: classes.listItem
+      }, "HTML & CSS"), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("li", {
+        className: classes.listItem
+      }, "React"))), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_11__["Grid"], {
+        item: true,
+        xs: 6
+      }, react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("ul", {
+        className: classes.list
+      }, react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("li", {
+        className: classes.listItem
+      }, "Node.js"), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("li", {
+        className: classes.listItem
+      }, "Express"), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("li", {
+        className: classes.listItem
+      }, "Angular"))))), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_11__["Grid"], {
+        item: true,
+        xs: 6,
+        className: classes.imgContainer
+      }, react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("img", {
+        src: "/static/professional.jpg",
+        className: classes.img
+      })))))));
     }
   }]);
 
-  return Home;
+  return About;
 }(react__WEBPACK_IMPORTED_MODULE_7___default.a.Component);
 
-/* harmony default export */ __webpack_exports__["default"] = (Object(_styles__WEBPACK_IMPORTED_MODULE_15__["default"])(Home));
+/* harmony default export */ __webpack_exports__["default"] = (Object(_styles__WEBPACK_IMPORTED_MODULE_12__["default"])(About));
 
 /***/ }),
 
-/***/ "./pages/modules/home/styles.js":
-/*!**************************************!*\
-  !*** ./pages/modules/home/styles.js ***!
-  \**************************************/
+/***/ "./pages/modules/about/styles.js":
+/*!***************************************!*\
+  !*** ./pages/modules/about/styles.js ***!
+  \***************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -57442,66 +57461,57 @@ __webpack_require__.r(__webpack_exports__);
   var colors = theme.palette.colors;
   return {
     container: {
-      display: "flex",
-      flexDirection: "column",
-      height: "100%",
-      width: "100%",
-      justifyContent: "center",
-      alignItems: "center"
-    },
-    introContainer: {
-      display: "flex",
-      flexDirection: "column",
-      justifyContent: "flex-start"
-    },
-    intro: {
-      color: colors.secondary,
-      fontFamily: "Roboto",
-      fontSize: "20px",
-      lineHeight: "1.25"
-    },
-    name: {
-      color: colors.white,
-      fontSize: "80px",
-      lineHeight: "1.25"
-    },
-    title: {
-      color: colors.main50,
-      fontSize: "60px",
-      lineHeight: "1.25"
-    },
-    description: {
-      width: "500px",
-      marginTop: 20,
-      color: colors.main50,
-      fontSize: "18px"
-    },
-    link: {
-      color: colors.secondary,
-      textDecoration: "none"
-    },
-    button: {
-      marginTop: "50px",
-      width: "150px"
+      width: "75%",
+      height: "75%"
     },
     socialLinkContainer: {
       position: "absolute",
       bottom: 0,
       left: 40
+    },
+    number: {
+      color: colors.secondary
+    },
+    pageTitle: {
+      color: colors.white,
+      marginLeft: 10
+    },
+    para: {
+      fontSize: "16px",
+      color: colors.main50,
+      marginTop: 20,
+      fontFamily: "Roboto"
+    },
+    imgContainer: {
+      display: "flex",
+      justifyContent: "center"
+    },
+    img: {
+      width: "70%",
+      height: "100%"
+    },
+    list: {
+      listStyleImage: 'url("/static/right-arrow.svg")',
+      fontSize: "14px",
+      color: colors.main50,
+      fontFamily: "Roboto"
+    },
+    listItem: {
+      padding: 5
     }
   };
 }));
 
 /***/ }),
 
-/***/ 1:
-/*!*******************************************************************************************************************************************************************!*\
-  !*** multi next-client-pages-loader?page=%2Fmodules%2Fhome&absolutePagePath=%2FUsers%2FDrew%2FDocuments%2FCoding%2Fportfolio%2Fpages%2Fmodules%2Fhome%2Findex.js ***!
-  \*******************************************************************************************************************************************************************/
+/***/ 2:
+/*!*********************************************************************************************************************************************************************!*\
+  !*** multi next-client-pages-loader?page=%2Fmodules%2Fabout&absolutePagePath=%2FUsers%2FDrew%2FDocuments%2FCoding%2Fportfolio%2Fpages%2Fmodules%2Fabout%2Findex.js ***!
+  \*********************************************************************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! next-client-pages-loader?page=%2Fmodules%2Fhome&absolutePagePath=%2FUsers%2FDrew%2FDocuments%2FCoding%2Fportfolio%2Fpages%2Fmodules%2Fhome%2Findex.js! */"./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2Fmodules%2Fhome&absolutePagePath=%2FUsers%2FDrew%2FDocuments%2FCoding%2Fportfolio%2Fpages%2Fmodules%2Fhome%2Findex.js!./");
+module.exports = __webpack_require__(/*! next-client-pages-loader?page=%2Fmodules%2Fabout&absolutePagePath=%2FUsers%2FDrew%2FDocuments%2FCoding%2Fportfolio%2Fpages%2Fmodules%2Fabout%2Findex.js! */"./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2Fmodules%2Fabout&absolutePagePath=%2FUsers%2FDrew%2FDocuments%2FCoding%2Fportfolio%2Fpages%2Fmodules%2Fabout%2Findex.js!./");
 
 
 /***/ }),
@@ -57517,5 +57527,5 @@ module.exports = dll_6dc2816e14fab51b8269;
 
 /***/ })
 
-},[[1,"static/runtime/webpack.js"]]]));;
-//# sourceMappingURL=home.js.map
+},[[2,"static/runtime/webpack.js"]]]));;
+//# sourceMappingURL=about.js.map
