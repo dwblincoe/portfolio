@@ -57504,7 +57504,7 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
-/***/ 2:
+/***/ 1:
 /*!*********************************************************************************************************************************************************************!*\
   !*** multi next-client-pages-loader?page=%2Fmodules%2Fabout&absolutePagePath=%2FUsers%2FDrew%2FDocuments%2FCoding%2Fportfolio%2Fpages%2Fmodules%2Fabout%2Findex.js ***!
   \*********************************************************************************************************************************************************************/
@@ -57527,5 +57527,5 @@ module.exports = dll_6dc2816e14fab51b8269;
 
 /***/ })
 
-},[[2,"static/runtime/webpack.js"]]]));;
+},[[1,"static/runtime/webpack.js"]]]));;
 //# sourceMappingURL=about.js.map
