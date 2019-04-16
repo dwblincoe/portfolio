@@ -36,7 +36,13 @@ class Navbar extends React.Component {
             <Typography className={classes.link}>contact</Typography>
           </Link>
           <Button color="primary" variant="outlined" className={classes.button}>
-            Resume
+            <a
+              href="https://docs.google.com/document/d/11kVodIaAo3ObM_hWQN4GBPHwISr1q3fFOvZVeKDlZZg/edit?usp=sharing"
+              target="_blank"
+              className={classes.buttonLink}
+            >
+              Resume
+            </a>
           </Button>
         </Grid>
       </Grid>

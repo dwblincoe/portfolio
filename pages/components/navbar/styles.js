@@ -42,6 +42,10 @@ export default withStyles(theme => {
     },
     button: {
       marginRight: 30
+    },
+    buttonLink: {
+      textDecoration: "none",
+      color: colors.secondary
     }
   };
 });

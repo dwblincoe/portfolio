@@ -1,16 +1,21 @@
 import React from "react";
-import classNames from "classnames";
 
 import Navbar from "../../components/navbar";
 import SocialLinks from "../../components/socialLinks";
 import Body from "../../components/body";
 import Overlay from "../../components/overlay";
+import ProjectDialog from "../../components/project-dialog";
 
 import { Grid, Typography } from "@material-ui/core/";
 
 import withStyles from "./styles";
 
 class Portfolio extends React.Component {
+  state = {
+    openProjectDialog: false,
+    project: null
+  };
+
   renderSocialLinks = () => {
     const { classes } = this.props;
     return (
@@ -21,7 +26,37 @@ class Portfolio extends React.Component {
   };
 
   renderSite = site => {
-    return <Overlay site={site} />;
+    return (
+      <Overlay
+        project={site}
+        handleOpenProjectDialog={this.handleOpenProjectDialog}
+      />
+    );
+  };
+
+  renderProjectDialog = () => {
+    const { openProjectDialog, project } = this.state;
+    return (
+      <ProjectDialog
+        open={openProjectDialog}
+        project={project}
+        handleCloseProjectDialog={this.handleCloseProjectDialog}
+      />
+    );
+  };
+
+  handleOpenProjectDialog = evt => {
+    this.setState({
+      project: evt.currentTarget.name,
+      openProjectDialog: true
+    });
+  };
+
+  handleCloseProjectDialog = () => {
+    this.setState({
+      project: null,
+      openProjectDialog: false
+    });
   };
 
   render() {
@@ -62,6 +97,7 @@ class Portfolio extends React.Component {
               </Grid>
             </div>
           </Grid>
+          {this.renderProjectDialog()}
         </Body>
       </div>
     );
