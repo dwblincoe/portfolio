@@ -87,7 +87,9 @@ class Overlay extends React.Component {
             <Button
               variant="outlined"
               color="primary"
+              onClick={this.props.handleOpenProjectDialog}
               className={classes.button}
+              name={project}
             >
               More Info
             </Button>
