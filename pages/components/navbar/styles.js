@@ -46,6 +46,20 @@ export default withStyles(theme => {
     buttonLink: {
       textDecoration: "none",
       color: colors.secondary
+    },
+    dropdown: {
+      fill: colors.white,
+      marginRight: 30,
+      fontSize: 35,
+      "&:hover": {
+        cursor: "pointer",
+        fill: colors.secondary
+      }
+    },
+    drawerContainer: {
+      background: colors.main,
+      color: colors.main50,
+      width: "50%"
     }
   };
 });
