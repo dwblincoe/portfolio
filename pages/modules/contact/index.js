@@ -63,7 +63,7 @@ class Contact extends React.Component {
                         type="text"
                         name="name"
                         placeholder="Name"
-                        className={classes.input}
+                        className={classes.smInput}
                         InputProps={{
                           disableUnderline: true,
                           classes: { root: classes.test }
@@ -95,7 +95,7 @@ class Contact extends React.Component {
                         type="email"
                         name="_replyto"
                         placeholder="Email"
-                        className={classes.input}
+                        className={classes.smInput}
                         InputProps={{
                           disableUnderline: true,
                           classes: { root: classes.test }

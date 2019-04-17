@@ -41,6 +41,9 @@ export default withStyles(theme => {
       justifyContent: "flex-end"
     },
     input: {
+      width: "90%"
+    },
+    smInput: {
       width: "100%"
     },
     test: {
