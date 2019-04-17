@@ -5,8 +5,8 @@ export default withStyles(theme => {
 
   return {
     container: {
-      width: "60%",
-      height: "60%"
+      width: "100%",
+      height: "100%"
     },
     socialLinkContainer: {
       position: "absolute",
@@ -26,6 +26,9 @@ export default withStyles(theme => {
       flexDirection: "column",
       margin: `30px auto 0 auto`
     },
+    smTextField: {
+      marginTop: 20
+    },
     rootInputContainer: {
       marginTop: 20
     },
@@ -38,7 +41,7 @@ export default withStyles(theme => {
       justifyContent: "flex-end"
     },
     input: {
-      width: "90%"
+      width: "100%"
     },
     test: {
       border: `thin solid ${colors.secondary}`,

@@ -4,7 +4,7 @@ import Navbar from "../../components/navbar";
 import Body from "../../components/body";
 import SocialLinks from "../../components/socialLinks";
 
-import { Typography, Grid, TextField, Input, Button } from "@material-ui/core";
+import { Typography, Grid, TextField, Hidden, Button } from "@material-ui/core";
 
 import withStyles from "./styles";
 
@@ -31,9 +31,9 @@ class Contact extends React.Component {
             justify="center"
             alignContent="center"
           >
-            <div className={classes.container}>
+            <Grid item xs={11} md={9} className={classes.container}>
               <Grid container>
-                <Grid item xs={6} className={classes.paraContainer}>
+                <Grid item xs={12} className={classes.paraContainer}>
                   <Typography
                     variant="h5"
                     inline={true}
@@ -56,34 +56,70 @@ class Contact extends React.Component {
                 className={classes.form}
               >
                 <Grid container className={classes.rootInputContainer}>
-                  <Grid item xs={6} className={classes.nameInputContainer}>
-                    <TextField
-                      required
-                      type="text"
-                      name="name"
-                      placeholder="Name"
-                      className={classes.input}
-                      InputProps={{
-                        disableUnderline: true,
-                        classes: { root: classes.test }
-                      }}
-                      color="primary"
-                    />
-                  </Grid>
-                  <Grid item xs={6} className={classes.emailInputContainer}>
-                    <TextField
-                      required
-                      type="email"
-                      name="_replyto"
-                      placeholder="Email"
-                      className={classes.input}
-                      InputProps={{
-                        disableUnderline: true,
-                        classes: { root: classes.test }
-                      }}
-                      color="primary"
-                    />
-                  </Grid>
+                  <Hidden mdUp>
+                    <Grid item xs={12}>
+                      <TextField
+                        required
+                        type="text"
+                        name="name"
+                        placeholder="Name"
+                        className={classes.input}
+                        InputProps={{
+                          disableUnderline: true,
+                          classes: { root: classes.test }
+                        }}
+                        color="primary"
+                      />
+                    </Grid>
+                  </Hidden>
+                  <Hidden smDown>
+                    <Grid item md={6} className={classes.nameInputContainer}>
+                      <TextField
+                        required
+                        type="text"
+                        name="name"
+                        placeholder="Name"
+                        className={classes.input}
+                        InputProps={{
+                          disableUnderline: true,
+                          classes: { root: classes.test }
+                        }}
+                        color="primary"
+                      />
+                    </Grid>
+                  </Hidden>
+                  <Hidden mdUp>
+                    <Grid item xs={12} className={classes.smTextField}>
+                      <TextField
+                        required
+                        type="email"
+                        name="_replyto"
+                        placeholder="Email"
+                        className={classes.input}
+                        InputProps={{
+                          disableUnderline: true,
+                          classes: { root: classes.test }
+                        }}
+                        color="primary"
+                      />
+                    </Grid>
+                  </Hidden>
+                  <Hidden smDown>
+                    <Grid item md={6} className={classes.emailInputContainer}>
+                      <TextField
+                        required
+                        type="email"
+                        name="_replyto"
+                        placeholder="Email"
+                        className={classes.input}
+                        InputProps={{
+                          disableUnderline: true,
+                          classes: { root: classes.test }
+                        }}
+                        color="primary"
+                      />
+                    </Grid>
+                  </Hidden>
                 </Grid>
                 <TextField
                   required
@@ -108,7 +144,7 @@ class Contact extends React.Component {
                   Send
                 </Button>
               </form>
-            </div>
+            </Grid>
           </Grid>
         </Body>
       </div>
