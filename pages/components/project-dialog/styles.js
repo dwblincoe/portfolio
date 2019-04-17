@@ -24,8 +24,7 @@ export default withStyles(theme => {
     },
     closeButton: {
       float: "right",
-      height: 35,
-      width: 35,
+      fontSize: 30,
       fill: colors.main50,
       paddingRight: 10,
       paddingTop: 10,

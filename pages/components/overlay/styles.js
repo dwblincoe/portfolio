@@ -33,7 +33,7 @@ export default withStyles(theme => {
     },
     button: {
       alignSelf: "center",
-      width: "30%"
+      width: "45%"
     }
   };
 });

@@ -13,7 +13,7 @@ class SocialLinks extends React.Component {
     const { classes } = this.props;
 
     return (
-      <Hidden mdDown>
+      <Hidden smDown>
         <Grid container className={classes.container}>
           <div className={classes.socialLinks}>
             <a

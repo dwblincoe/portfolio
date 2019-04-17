@@ -10,34 +10,38 @@ export default withStyles(theme => {
       height: "100%",
       width: "100%",
       justifyContent: "center",
-      alignItems: "center"
+      alignContent: "center"
+    },
+    descriptionContainer: {
+      display: "flex",
+      justifyContent: "center"
     },
     introContainer: {
       display: "flex",
       flexDirection: "column",
-      justifyContent: "flex-start"
+      justifyContent: "flex-start",
+      padding: 10
     },
     intro: {
       color: colors.secondary,
       fontFamily: "Roboto",
-      fontSize: "20px",
+      fontSize: 20,
       lineHeight: "1.25"
     },
     name: {
       color: colors.white,
-      fontSize: "80px",
+      fontSize: 80,
       lineHeight: "1.25"
     },
     title: {
       color: colors.main50,
-      fontSize: "60px",
+      fontSize: 60,
       lineHeight: "1.25"
     },
     description: {
-      width: "500px",
       marginTop: 20,
       color: colors.main50,
-      fontSize: "18px"
+      fontSize: 18
     },
     link: {
       color: colors.secondary,

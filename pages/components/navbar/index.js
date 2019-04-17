@@ -2,6 +2,7 @@ import React from "react";
 import Link from "next/link";
 
 import Logo from "../../assets/dblogo";
+import CloseButton from "../../assets/close";
 
 import {
   Grid,
@@ -39,32 +40,39 @@ class Navbar extends React.Component {
           onClose={() => this.toggleDrawer(false)}
           classes={{ paper: classes.drawerContainer }}
         >
-          <List>
-            <ListItem>
-              <Typography className={classes.number}>01.</Typography>
-              <Link href="/about">
+          <Grid container justify="flex-end">
+            <CloseButton
+              className={classes.closeButton}
+              onClick={() => this.toggleDrawer(false)}
+            />
+          </Grid>
+
+          <List className={classes.listContainer}>
+            <Link href="/about">
+              <ListItem className={classes.listItemContainer}>
+                <Typography className={classes.number}>01.</Typography>
                 <Typography className={classes.link}>about</Typography>
-              </Link>
-            </ListItem>
-            <ListItem>
-              <Typography className={classes.number}>02.</Typography>
-              <Link href="/experience">
+              </ListItem>
+            </Link>
+            <Link href="/experience">
+              <ListItem className={classes.listItemContainer}>
+                <Typography className={classes.number}>02.</Typography>
                 <Typography className={classes.link}>experience</Typography>
-              </Link>
-            </ListItem>
-            <ListItem>
-              <Typography className={classes.number}>03.</Typography>
-              <Link href="/portfolio">
+              </ListItem>
+            </Link>
+            <Link href="/portfolio">
+              <ListItem className={classes.listItemContainer}>
+                <Typography className={classes.number}>03.</Typography>
                 <Typography className={classes.link}>portfolio</Typography>
-              </Link>
-            </ListItem>
-            <ListItem>
-              <Typography className={classes.number}>04.</Typography>
-              <Link href="/contact" className={classes.link}>
+              </ListItem>
+            </Link>
+            <Link href="/contact" className={classes.link}>
+              <ListItem className={classes.listItemContainer}>
+                <Typography className={classes.number}>04.</Typography>
                 <Typography className={classes.link}>contact</Typography>
-              </Link>
-            </ListItem>
-            <ListItem>
+              </ListItem>
+            </Link>
+            <ListItem className={classes.listItemContainer}>
               <Button
                 color="primary"
                 variant="outlined"

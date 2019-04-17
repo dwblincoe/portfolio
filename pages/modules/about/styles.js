@@ -5,8 +5,10 @@ export default withStyles(theme => {
 
   return {
     container: {
-      width: "75%",
-      height: "75%"
+      width: "100%",
+      height: "100%",
+      display: "flex",
+      alignContent: "center"
     },
     socialLinkContainer: {
       position: "absolute",
@@ -21,18 +23,23 @@ export default withStyles(theme => {
       marginLeft: 10
     },
     para: {
+      paddingRight: 20,
       fontSize: "16px",
       color: colors.main50,
       marginTop: 20,
       fontFamily: "Roboto"
     },
+    smImg: {
+      marginTop: 20
+    },
     imgContainer: {
       display: "flex",
-      justifyContent: "center"
+      alignItems: "center"
     },
     img: {
-      width: "70%",
-      height: "100%"
+      display: "block",
+      width: "100%",
+      margin: "auto"
     },
     list: {
       listStyleImage: 'url("/static/right-arrow.svg")',

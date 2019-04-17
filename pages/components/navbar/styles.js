@@ -48,7 +48,7 @@ export default withStyles(theme => {
       color: colors.secondary
     },
     dropdown: {
-      fill: colors.white,
+      fill: colors.secondary,
       marginRight: 30,
       fontSize: 35,
       "&:hover": {
@@ -60,6 +60,22 @@ export default withStyles(theme => {
       background: colors.main,
       color: colors.main50,
       width: "50%"
+    },
+    listContainer: {
+      height: "100%",
+      display: "flex",
+      flexDirection: "column",
+      justifyContent: "center"
+    },
+    listItemContainer: {
+      display: "flex",
+      flexDirection: "row",
+      justifyContent: "center"
+    },
+    closeButton: {
+      fontSize: 18,
+      marginRight: 20,
+      marginTop: 20
     }
   };
 });

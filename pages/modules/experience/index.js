@@ -8,7 +8,7 @@ import Torchlite from "./torchlite";
 import ElevenFifty from "./eleven-fifty";
 import Ovazi from "./ovazi";
 
-import { Grid, Typography, List, ListItem } from "@material-ui/core";
+import { Grid, Typography, Hidden } from "@material-ui/core";
 
 import withStyles from "./styles";
 
@@ -23,6 +23,87 @@ class Experience extends React.Component {
       <div className={classes.socialLinkContainer}>
         <SocialLinks />
       </div>
+    );
+  };
+
+  renderBigNav = () => {
+    const { selectedIndex } = this.state;
+    const { classes } = this.props;
+    return (
+      <Grid item xs={3}>
+        <Typography
+          className={classNames({
+            [classes.text]: true,
+            [classes.selected]: selectedIndex === 0
+          })}
+          onClick={event => this.handleChangeSelected(event, 0)}
+        >
+          Eleven Fifty Academy
+        </Typography>
+        <Typography
+          className={classNames({
+            [classes.text]: true,
+            [classes.selected]: selectedIndex === 1
+          })}
+          onClick={event => this.handleChangeSelected(event, 1)}
+        >
+          Torchlite
+        </Typography>
+        <Typography
+          className={classNames({
+            [classes.text]: true,
+            [classes.selected]: selectedIndex === 2
+          })}
+          onClick={event => this.handleChangeSelected(event, 2)}
+        >
+          Ovazi
+        </Typography>
+      </Grid>
+    );
+  };
+
+  renderSmallNav = () => {
+    const { selectedIndex } = this.state;
+    const { classes } = this.props;
+    return (
+      <Grid item xs={12} className={classes.smNavContainer}>
+        <Grid container direction="row">
+          <Grid item xs={6} sm={4}>
+            <Typography
+              className={classNames({
+                [classes.text2]: true,
+                [classes.selected2]: selectedIndex === 0,
+                [classes.opposite]: selectedIndex === 1
+              })}
+              onClick={event => this.handleChangeSelected(event, 0)}
+            >
+              Eleven Fifty Academy
+            </Typography>
+          </Grid>
+          <Grid item xs={3} sm={4}>
+            <Typography
+              className={classNames({
+                [classes.text2]: true,
+                [classes.selected2]: selectedIndex === 1
+              })}
+              onClick={event => this.handleChangeSelected(event, 1)}
+            >
+              Torchlite
+            </Typography>
+          </Grid>
+          <Grid item xs={3} sm={4}>
+            <Typography
+              className={classNames({
+                [classes.text2]: true,
+                [classes.selected2]: selectedIndex === 2
+              })}
+              onClick={event => this.handleChangeSelected(event, 2)}
+            >
+              Ovazi
+            </Typography>
+          </Grid>
+        </Grid>
+      </Grid>
     );
   };
 
@@ -50,14 +131,13 @@ class Experience extends React.Component {
 
   render() {
     const { classes } = this.props;
-    const { selectedIndex } = this.state;
     return (
       <div>
         <Navbar />
         <Body>
           {this.renderSocialLinks()}
           <Grid container justify="center" alignContent="center">
-            <div className={classes.container}>
+            <Grid item xs={11} md={9}>
               <Typography variant="h5" inline={true} className={classes.number}>
                 02.
               </Typography>
@@ -69,41 +149,13 @@ class Experience extends React.Component {
                 Experience
               </Typography>
               <Grid container className={classes.experienceContainer}>
-                <Grid item xs={3}>
-                  <Typography
-                    className={classNames({
-                      [classes.text]: true,
-                      [classes.selected]: selectedIndex === 0
-                    })}
-                    onClick={event => this.handleChangeSelected(event, 0)}
-                  >
-                    Eleven Fifty Academy
-                  </Typography>
-                  <Typography
-                    className={classNames({
-                      [classes.text]: true,
-                      [classes.selected]: selectedIndex === 1
-                    })}
-                    onClick={event => this.handleChangeSelected(event, 1)}
-                  >
-                    Torchlite
-                  </Typography>
-                  <Typography
-                    className={classNames({
-                      [classes.text]: true,
-                      [classes.selected]: selectedIndex === 2
-                    })}
-                    onClick={event => this.handleChangeSelected(event, 2)}
-                  >
-                    Ovazi
-                  </Typography>
-                </Grid>
-                <Grid item xs={9} className={classes.summaryContainer}>
+                <Hidden smDown>{this.renderBigNav()}</Hidden>
+                <Hidden mdUp>{this.renderSmallNav()}</Hidden>
+                <Grid item xs={12} md={9} className={classes.summaryContainer}>
                   {this.renderExperienceSummary()}
                 </Grid>
               </Grid>
-              <Grid container />
-            </div>
+            </Grid>
           </Grid>
         </Body>
       </div>

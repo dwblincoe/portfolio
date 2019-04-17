@@ -28,49 +28,45 @@ class Home extends React.Component {
         <Navbar />
         <Body>
           {this.renderSocialLinks()}
-          <div className={classes.container}>
-            <div className={classes.introContainer}>
-              <div>
+          <Grid container className={classes.container}>
+            <div className={classes.descriptionContainer}>
+              <Grid item xs={11} md={9} className={classes.introContainer}>
                 <Typography className={classes.intro}>
                   Hi, my name is
                 </Typography>
-              </div>
-              <div>
                 <Typography className={classes.name}>Drew Blincoe</Typography>
-              </div>
-              <div>
                 <Typography className={classes.title}>
                   I build things with my computer
                 </Typography>
-              </div>
-              <div>
-                <Typography className={classes.description}>
-                  I am a software developer, based in Evansville, IN. I
-                  specialize in building exceptional web applications with
-                  effecient code. Currently working at{" "}
-                  <a
-                    href="https://torchlite.com/"
-                    target="_blank"
-                    className={classes.link}
-                  >
-                    Torchlite
-                  </a>{" "}
-                  as a contracted fullstack developer. Looking for that next
-                  opportunity!
-                </Typography>
-              </div>
-              <Link href="/contact">
-                <Button
-                  color="primary"
-                  variant="outlined"
-                  size="large"
-                  className={classes.button}
-                >
-                  Let's Talk
-                </Button>
-              </Link>
+                <Grid item xs={11} md={6}>
+                  <Typography className={classes.description}>
+                    I am a software developer, based in Evansville, IN. I
+                    specialize in building exceptional web applications with
+                    effecient code. Currently working at{" "}
+                    <a
+                      href="https://torchlite.com/"
+                      target="_blank"
+                      className={classes.link}
+                    >
+                      Torchlite
+                    </a>{" "}
+                    as a contracted fullstack developer. Looking for that next
+                    opportunity!
+                  </Typography>
+                  <Link href="/contact">
+                    <Button
+                      color="primary"
+                      variant="outlined"
+                      size="large"
+                      className={classes.button}
+                    >
+                      Let's Talk
+                    </Button>
+                  </Link>
+                </Grid>
+              </Grid>
             </div>
-          </div>
+          </Grid>
         </Body>
       </Grid>
     );
