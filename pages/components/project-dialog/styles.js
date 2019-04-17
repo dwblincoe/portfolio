@@ -5,7 +5,7 @@ export default withStyles(theme => {
 
   return {
     root: {
-      height: 500,
+      minHeight: 500,
       background: colors.main
     },
     container: {
@@ -13,11 +13,12 @@ export default withStyles(theme => {
       width: "100%"
     },
     torchliteContainer: {
-      height: "40%",
-      background: 'url("/static/torchlite-banner.jpg") no-repeat center center'
+      height: 200,
+      background: `#FFFFFF url("/static/torchlite-banner.jpg") no-repeat center center`,
+      backgroundSize: "75%"
     },
     ovaziContainer: {
-      height: "40%",
+      height: 200,
       background:
         'black url("/static/ovazi-banner.png") no-repeat center center',
       backgroundSize: "75%"
