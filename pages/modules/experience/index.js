@@ -8,6 +8,7 @@ import Torchlite from "./torchlite";
 import ElevenFifty from "./eleven-fifty";
 import Ovazi from "./ovazi";
 import SigmaEquipment from "./sigma-equipment";
+import Switchbox from './switchbox';
 
 import { Grid, Typography, Hidden } from "@material-ui/core";
 
@@ -15,7 +16,7 @@ import withStyles from "./styles";
 
 class Experience extends React.Component {
     state = {
-        selectedIndex: 3,
+        selectedIndex: 4,
     };
 
     renderSocialLinks = () => {
@@ -67,6 +68,15 @@ class Experience extends React.Component {
                     onClick={(event) => this.handleChangeSelected(event, 3)}
                 >
                     Sigma Equipment
+                </Typography>
+                <Typography
+                    className={classNames({
+                        [classes.text]: true,
+                        [classes.selected]: selectedIndex === 4,
+                    })}
+                    onClick={(event) => this.handleChangeSelected(event, 4)}
+                >
+                    Swithcbox Inc.
                 </Typography>
             </Grid>
         );
@@ -131,6 +141,19 @@ class Experience extends React.Component {
                             Sigma Equipment
                         </Typography>
                     </Grid>
+                    <Grid item xs={3} sm={4}>
+                        <Typography
+                            className={classNames({
+                                [classes.text2]: true,
+                                [classes.selected2]: selectedIndex === 4,
+                            })}
+                            onClick={(event) =>
+                                this.handleChangeSelected(event, 4)
+                            }
+                        >
+                            Switchbox Inc.
+                        </Typography>
+                    </Grid>
                 </Grid>
             </Grid>
         );
@@ -153,6 +176,10 @@ class Experience extends React.Component {
 
         if (selectedIndex === 3) {
             return <SigmaEquipment />;
+        }
+
+        if(selectedIndex === 4){
+            return <Switchbox/>;
         }
     };
 

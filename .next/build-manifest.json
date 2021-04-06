@@ -11,15 +11,11 @@
       "static/runtime/webpack.js",
       "static/runtime/main.js"
     ],
-    "/modules/contact": [
+    "/modules/about": [
       "static/runtime/webpack.js",
       "static/runtime/main.js"
     ],
-    "/modules/home": [
-      "static/runtime/webpack.js",
-      "static/runtime/main.js"
-    ],
-    "/modules/portfolio": [
+    "/modules/experience": [
       "static/runtime/webpack.js",
       "static/runtime/main.js"
     ]

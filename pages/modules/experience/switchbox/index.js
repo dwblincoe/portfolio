@@ -1,7 +1,7 @@
 import Typography from "@material-ui/core/Typography";
 import withStyles from "./styles";
 
-const SigmaEquipment = ({ classes }) => {
+const Switchbox = ({ classes }) => {
     return (
         <div>
             <Typography className={classes.jobTitle} variant="h6" inline={true}>
@@ -12,35 +12,30 @@ const SigmaEquipment = ({ classes }) => {
             </Typography>
             <Typography variant="h6" inline={true}>
                 <a
-                    href="https://elevenfifty.org/"
+                    href="https://switchboxinc.com/"
                     target="_blank"
                     className={classes.link}
                 >
-                    Sigma Equipment
+                    Switchbox Inc.
                 </a>
             </Typography>
-            <Typography className={classes.date}>May 2019 - Oct 2020</Typography>
+            <Typography className={classes.date}>Oct 2020 - Present</Typography>
             <ul className={classes.list}>
                 <li className={classes.listItem}>
-                    Built features and maintained applications in React, .Net
-                    Core, and NodeJS.
+                    Built features and maintained applications in React and
+                    .Net.
                 </li>
                 <li className={classes.listItem}>
-                    Built Stored Procedures and implemented new tables in MSSQL
-                    using SQL.
+                    Used Redux, Ant Design, and Typescript alongside React to
+                    build scalable frontend applications.
                 </li>
                 <li className={classes.listItem}>
-                    Implementer of Redux in our React applications.
-                </li>
-                <li className={classes.listItem}>
-                    Helped implement new architecture for applications. Switched
-                    company from a .Net Core backend to a full NodeJS backend.
-                    As well as adding Redux to our React frontend for better
-                    state management.
+                    Helped create and maintain scalable, cutting edge software
+                    that gave clients peace of mind.
                 </li>
             </ul>
         </div>
     );
 };
 
-export default withStyles(SigmaEquipment);
+export default withStyles(Switchbox);

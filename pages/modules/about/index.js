@@ -73,7 +73,7 @@ class About extends React.Component {
                                         <Typography className={classes.para}>
                                             My name is Drew Blincoe and I am a
                                             Full Stack Software Developer at
-                                            Sigma Equipment in Evansville, IN. I
+                                            Switchbox Inc. I
                                             am very passionate about learning
                                             and challenging myself which is why
                                             I became a Marine and why I changed
@@ -120,14 +120,14 @@ class About extends React.Component {
                                                             classes.listItem
                                                         }
                                                     >
-                                                        HTML5
+                                                       Typescript 
                                                     </li>
                                                     <li
                                                         className={
                                                             classes.listItem
                                                         }
                                                     >
-                                                        CSS3
+                                                        HTML5 & CSS3
                                                     </li>
                                                     <li
                                                         className={
@@ -191,7 +191,7 @@ class About extends React.Component {
                                                             classes.listItem
                                                         }
                                                     >
-                                                        .Net Core
+                                                        .Net
                                                     </li>
                                                     <li
                                                         className={
