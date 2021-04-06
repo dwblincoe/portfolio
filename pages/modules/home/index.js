@@ -40,18 +40,17 @@ class Home extends React.Component {
                 </Typography>
                 <Grid item xs={11} md={6}>
                   <Typography className={classes.description}>
-                    I am a software developer, based in Evansville, IN. I
+                    I am a software developer, based out of Evansville, IN. I
                     specialize in building exceptional web applications with
                     effecient code. Currently working at{" "}
                     <a
-                      href="https://torchlite.com/"
+                      href="https://switchboxinc.com/"
                       target="_blank"
                       className={classes.link}
                     >
-                      Torchlite
+                      Switchbox Inc.
                     </a>{" "}
-                    as a contracted fullstack developer. Looking for that next
-                    opportunity!
+                    as a fullstack developer.
                   </Typography>
                   <Link href="/contact">
                     <Button

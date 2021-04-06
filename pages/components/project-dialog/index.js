@@ -6,6 +6,7 @@ import OvaziInfo from "./ovazi-info";
 import CollectaverseInfo from "./collectaverse-info";
 import AtlasInfo from "./atlas-info";
 import MaryGibsonPhotographyInfo from './marygibsonphotography-info';
+import SwitchboxInfo from "./switchbox-info";
 
 import CloseButton from "../../assets/close";
 
@@ -33,6 +34,10 @@ class ProjectDialog extends React.Component {
         if(project === 'mary-gibson-photography'){
             return <MaryGibsonPhotographyInfo/>
         }
+
+        if(project === "switchbox"){
+            return <SwitchboxInfo/>
+        }
     };
 
     render() {
@@ -46,7 +51,9 @@ class ProjectDialog extends React.Component {
                 : project === "collectaverse"
                 ? "https://www.collectaverse.com/"
                 : project === 'mary-gibson-photography' 
-                ? "http://www.marygibsonphotography.net"
+                ? "http://www.marygibsonphotography.net" 
+                : project === 'switchbox'
+                ? "https://www.switchboxinc.com/"
                 : null;
 
         return (
@@ -67,7 +74,8 @@ class ProjectDialog extends React.Component {
                             [classes.collectaverseContainer]:
                                 project === "collectaverse",
                             [classes.atlasContainer]: project === "atlas",
-                            [classes.mgpContainer]: project === "mary-gibson-photography"
+                            [classes.mgpContainer]: project === "mary-gibson-photography",
+                            [classes.switchboxContainer]: project === "switchbox"
                         })}
                     >
                         <CloseButton

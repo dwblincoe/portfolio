@@ -37,8 +37,15 @@ export default withStyles((theme) => {
         },
         mgpContainer: {
             height: 200,
-            background: 'black url(/static/mary-gibson-photography.png) no-repeat center center',
-            backgroundSize: "cover"
+            background:
+                "black url(/static/mary-gibson-photography.png) no-repeat center center",
+            backgroundSize: "cover",
+        },
+        switchboxContainer: {
+            height: 200,
+            background:
+                "black url(/static/switchbox-banner.png) no-repeat center center",
+            backgroundSize: "cover",
         },
         closeButton: {
             float: "right",

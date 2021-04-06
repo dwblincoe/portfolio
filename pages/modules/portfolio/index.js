@@ -61,7 +61,7 @@ class Portfolio extends React.Component {
 
     render() {
         const { classes } = this.props;
-        const sites = ["mary-gibson-photography", "collectaverse", "atlas", "torchlite", "ovazi"];
+        const sites = ["switchbox", "mary-gibson-photography", "collectaverse", "atlas", "torchlite", "ovazi"];
         return (
             <div>
                 <Navbar />
