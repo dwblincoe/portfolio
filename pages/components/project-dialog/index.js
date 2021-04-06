@@ -5,6 +5,7 @@ import TorchliteInfo from "./torchlite-info";
 import OvaziInfo from "./ovazi-info";
 import CollectaverseInfo from "./collectaverse-info";
 import AtlasInfo from "./atlas-info";
+import MaryGibsonPhotographyInfo from './marygibsonphotography-info';
 
 import CloseButton from "../../assets/close";
 
@@ -28,6 +29,10 @@ class ProjectDialog extends React.Component {
         if (project === "atlas") {
             return <AtlasInfo />;
         }
+
+        if(project === 'mary-gibson-photography'){
+            return <MaryGibsonPhotographyInfo/>
+        }
     };
 
     render() {
@@ -40,6 +45,8 @@ class ProjectDialog extends React.Component {
                 ? "https://www.ovazi.tips/"
                 : project === "collectaverse"
                 ? "https://www.collectaverse.com/"
+                : project === 'mary-gibson-photography' 
+                ? "http://www.marygibsonphotography.net"
                 : null;
 
         return (
@@ -60,6 +67,7 @@ class ProjectDialog extends React.Component {
                             [classes.collectaverseContainer]:
                                 project === "collectaverse",
                             [classes.atlasContainer]: project === "atlas",
+                            [classes.mgpContainer]: project === "mary-gibson-photography"
                         })}
                     >
                         <CloseButton

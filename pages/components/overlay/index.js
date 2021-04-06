@@ -15,9 +15,10 @@ class Overlay extends React.Component {
 
     componentDidMount() {
         const { project } = this.props;
-        const title = project.charAt(0).toUpperCase() + project.slice(1);
+        const title = project === "mary-gibson-photography" ? project.split("-").reduce((a, b) => `${a} ${b[0].toUpperCase() + b.substr(1)}`, '') :project.charAt(0).toUpperCase() + project.slice(1);
+
         this.setState({
-            src: `/static/${this.props.project}.png`,
+            src: `/static/${project}.png`,
             title,
         });
 

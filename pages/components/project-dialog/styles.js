@@ -35,6 +35,11 @@ export default withStyles((theme) => {
                 'black url("/static/atlas-banner.png") no-repeat center center',
             backgroundSize: "75%",
         },
+        mgpContainer: {
+            height: 200,
+            background: 'black url(/static/mary-gibson-photography.png) no-repeat center center',
+            backgroundSize: "cover"
+        },
         closeButton: {
             float: "right",
             fontSize: 30,
